@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>OSC Protocol | SPIN Framework</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://www.spinframework.org/favicon.gif" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="../modules/node/node.css%3Fg.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/defaults.css%3Fg.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system.css%3Fg.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/system/system-menus.css%3Fg.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../modules/user/user.css%3Fg.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/cck/theme/content-module.css%3Fg.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/ckeditor/ckeditor.css%3Fg.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/dhtml_menu/dhtml_menu.css%3Fg.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/lightbox2/css/lightbox.css%3Fg.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/nice_menus/nice_menus.css%3Fg.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/modules/nice_menus/nice_menus_default.css%3Fg.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/themes/plainscape/css/960/reset.css%3Fg.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/themes/plainscape/css/960/960.css%3Fg.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/themes/plainscape/css/style.css%3Fg.css" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/themes/plainscape/css/admin.css%3Fg.css" />
+    <!--[if lt IE 7]>
+    <link type="text/css" rel="stylesheet" media="all" href="sites/all/themes/plainscape/css/ie.css" />
+    <![endif]-->
+    <script type="text/javascript" src="../misc/jquery.js%3Fg"></script>
+<script type="text/javascript" src="../misc/drupal.js%3Fg"></script>
+<script type="text/javascript" src="../sites/all/modules/dhtml_menu/dhtml_menu.js%3Fg"></script>
+<script type="text/javascript" src="../sites/all/modules/lightbox2/js/lightbox.js%3Fg"></script>
+<script type="text/javascript" src="../sites/all/modules/nice_menus/nice_menus.js%3Fg"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "dhtmlMenu": { "slide": "slide", "siblings": 0, "relativity": 0, "children": 0, "clone": 0, "doubleclick": 0 }, "lightbox2": { "rtl": 0, "file_path": "/(\\w\\w/)sites/default/files", "default_image": "/sites/all/modules/lightbox2/images/brokenimage.jpg", "border_size": 10, "font_color": "000", "box_color": "fff", "top_position": "", "overlay_opacity": 0.8, "overlay_color": "000", "disable_close_click": true, "resize_sequence": 0, "resize_speed": 400, "fade_in_speed": 400, "slide_down_speed": 600, "use_alt_layout": false, "disable_resize": false, "disable_zoom": false, "force_show_nav": false, "loop_items": false, "node_link_text": "View Image Details", "node_link_target": false, "image_count": "Image !current of !total", "video_count": "Video !current of !total", "page_count": "Page !current of !total", "lite_press_x_close": "press \x3ca href=\"#\" onclick=\"hideLightbox(); return FALSE;\"\x3e\x3ckbd\x3ex\x3c/kbd\x3e\x3c/a\x3e to close", "download_link_text": "", "enable_login": false, "enable_contact": false, "keys_close": "c x 27", "keys_previous": "p 37", "keys_next": "n 39", "keys_zoom": "z", "keys_play_pause": "32", "display_image_size": "", "image_node_sizes": "()", "trigger_lightbox_classes": "", "trigger_lightbox_group_classes": "", "trigger_slideshow_classes": "", "trigger_lightframe_classes": "", "trigger_lightframe_group_classes": "", "custom_class_handler": 0, "custom_trigger_classes": "", "disable_for_gallery_lists": true, "disable_for_acidfree_gallery_lists": true, "enable_acidfree_videos": true, "slideshow_interval": 5000, "slideshow_automatic_start": true, "slideshow_automatic_exit": true, "show_play_pause": true, "pause_on_next_click": false, "pause_on_previous_click": true, "loop_slides": false, "iframe_width": 600, "iframe_height": 400, "iframe_border": 1, "enable_video": false } });
+//--><!]]>
+</script>
+  </head>
+  <body>
+    <div id="wrapper" class="container_12">
+      <div id="header" class="grid_12">
+        <div id="header-left" class="grid_8 alpha">
+                      <a href="about.html" title="Go to Homepage"><img src="../images/logo_SPIN.jpg" alt="SPIN Framework" id="logo" /></a>
+                                <h1 id="site-name"><a href="about.html" title="Go to Homepage">SPIN Framework</a></h1>
+                                <div id="site-slogan">Networked Framework for Distributed Virtual Environments &amp; 3D Visualization</div>
+                  </div><!-- #header-left -->
+        <div id="header-right" class="grid_4 omega">
+                  </div><!-- #header-right -->
+        <div class="clear"></div>
+      </div><!-- #header -->
+      <div class="clear"></div>
+      <div id="primary-nav" class="grid_12">
+                  <ul class="links"><li class="menu-114 first"><a href="about.html" title="
+	About
+">Welcome</a></li>
+<li class="menu-116"><a href="showcase.html" title="Showcase">Showcase</a></li>
+<li class="menu-362"><a href="../downloads.html" title="
+	Download
+">Downloads</a></li>
+<li class="menu-118 active-trail last"><a href="documentation.html" title="Documentation">Documentation</a></li>
+</ul>              </div><!-- #primary-nav -->
+      <div class="clear"></div>
+      <div id="content-wrapper" class="grid_12">
+        <div id="main" class="grid_8 alpha">
+                                                                      <div id="node-26" class="node clear-block">
+      <h2 class="title">OSC Protocol</h2>
+    <div class="meta">
+      </div>
+  <div class="content">
+    <p class="rteright">
+	<a href="../doxygen/oscprotocol.html">POP OUT FRAME</a></p>
+<p>
+	<iframe height="500" src="../doxygen/oscprotocol.html" width="100%"></iframe></p>
+  </div>
+  <div class="meta node-links">
+    
+      </div>
+  </div>
+                  </div>
+                  <div id="sidebar" class="grid_3 omega">
+            <div id="block-nice_menus-3" class="block block-nice_menus">
+  <h2><span class="nice-menu-show-title">Documentation</span></h2>
+
+  <div class="content">
+    <ul class="nice-menu nice-menu-left" id="nice-menu-3"><li id="menu-354" class="menu-path-node-17"><a href="overview.html" title="Overview" id="dhtml_menu-354">Overview</a></li>
+<li id="menu-540" class="menu-path-node-40"><a href="../wiki/quick_start_osx.html" title="Quick Start Guide for OSX" id="dhtml_menu-540">Quick start for OSX</a></li>
+<li id="menu-542" class="menu-path-node-41"><a href="../wiki/quick_start_ubuntu.html" title="Quick Start Guide for Ubuntu Linux" id="dhtml_menu-542">Quick start for Ubuntu</a></li>
+<li id="menu-352" class="menu-path-node-15"><a href="about_spin_messaging.html" title="About SPIN Messaging" id="dhtml_menu-352">About SPIN Messaging</a></li>
+<li id="menu-350" class="menu-path-node-13"><a href="pdsheefa.html" title="
+	pdsheefa
+" id="dhtml_menu-350">About [pdsheefa]</a></li>
+</ul>
+  </div>
+</div>
+<div id="block-nice_menus-2" class="block block-nice_menus">
+  <h2><span class="nice-menu-show-title">Other Links</span></h2>
+
+  <div class="content">
+    <ul class="nice-menu nice-menu-left" id="nice-menu-2"><li id="menu-545" class="menu-path-code.sat.qc.ca-spinframework"><a href="http://code.sat.qc.ca/spinframework" title="
+	http://code.sat.qc.ca/spinframework
+" id="dhtml_menu-545">Developer Site</a></li>
+<li id="menu-300" class="menu-path-node-6"><a href="credits.html" title="Credits" id="dhtml_menu-300">Credits</a></li>
+<li id="menu-299" class="menu-path-contact"><a href="../contact.html" title="
+" id="dhtml_menu-299">Contact</a></li>
+<li id="menu-298" class="menu-path-user-login"><a href="../user/login.html" title="" id="dhtml_menu-298">Log in</a></li>
+</ul>
+  </div>
+</div>
+<div id="block-search-0" class="block block-search">
+  <h2>Search</h2>
+
+  <div class="content">
+    <form action="osc_protocol.html"  accept-charset="UTF-8" method="post" id="search-block-form">
+<div><div class="container-inline">
+  <div class="form-item" id="edit-search-block-form-1-wrapper">
+ <label for="edit-search-block-form-1">Search this site: </label>
+ <input type="text" maxlength="128" name="search_block_form" id="edit-search-block-form-1" size="15" value="" title="Enter the terms you wish to search for." class="form-text" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Search"  class="form-submit" />
+<input type="hidden" name="form_build_id" id="form-qmRPYzdQRI4gQOJ8MWoBfBjzlwho1zVOwIZQG41YgDE" value="form-qmRPYzdQRI4gQOJ8MWoBfBjzlwho1zVOwIZQG41YgDE"  />
+<input type="hidden" name="form_id" id="edit-search-block-form" value="search_block_form"  />
+</div>
+
+</div></form>
+  </div>
+</div>
+          </div>
+                <div class="clear"></div>
+      </div><!-- #content-wrapper -->
+      <div class="clear"></div>
+      <div id="footer-top" class="grid_12">
+              </div>
+      <div id="footer" class="grid_12">
+                  <p><p>
+	SPIN Framework<br />
+	Copyright &copy; 2011, Mike Wozniewski, Zack Settel</p>
+</p>
+                              </div><!-- #footer -->
+      <div class="clear"></div>
+    </div><!-- #wrapper -->
+      </body>
+</html>

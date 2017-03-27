@@ -1,0 +1,668 @@
+/* $Id: style.css,v 1.3 2009/03/07 13:24:35 kong Exp $ */
+
+/**
+ * @file
+ * Contains default Plainscape theme CSS.
+ *
+ * You should not modify this file. Put your custom css
+ * or css overrides in custom.css so your changes will
+ * not be overwritten when upgrading to a new version
+ * of this theme.
+ */
+
+/**
+ * Default HTML elements
+ */
+h1 {
+  font-size: 2.4em;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 0.83em 0;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+h6 {
+  font-size: 0.67em;
+  margin: 2.33em 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+p {
+  margin: 1em 0;
+}
+
+i, cite, em, var, dfn {
+  font-style: italic;
+}
+
+sup {
+  font-size: smaller;
+  line-height: normal;
+  vertical-align: super;
+}
+
+ol,
+ul {
+  margin: 1em 0;
+  padding-left: 40px;
+}
+
+dd {
+  padding-left: 40px;
+}
+
+table {
+  border-spacing: 2px;
+  width: 100%;
+}
+
+td {
+  padding: 1px;
+}
+
+fieldset {
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: medium none;
+  padding-left: 2px;
+  padding-right: 2px;
+  white-space: nowrap;
+}
+
+a {
+  color: #26a;
+  text-decoration: none;
+}
+
+a:hover {
+  background: #ffc;
+}
+
+a img {
+  border: none;
+}
+
+hr {
+  border: 1px inset;
+  color: gray;
+  display: block;
+  height: 1px;
+  margin: 0.5em auto;
+}
+
+body {
+  color: #555;
+  font-family: 'Lucida Grande', Sans-Serif;
+  font-size: 62.5%;
+  line-height: normal;
+}
+
+small {
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 0.8em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Trebuchet MS', 'Lucida Grande', Arial, Sans-Serif;
+  font-weight: bold;
+  /*
+  text-transform: uppercase;
+  */
+}
+
+acronym,
+abbr {
+  border-bottom: 1px dashed #999;
+  cursor: help;
+  font-size: 0.9em;
+  letter-spacing: .07em;
+}
+
+strong {
+  color: #666;
+}
+
+/**
+ * Layout
+ */
+#header {
+  margin: 0 20px;
+  padding: 30px 0;
+  width: 920px;
+}
+
+#header-left {
+  width: 610px;
+}
+
+#header-right {
+  /*width: 290px;*/
+  width: 200px;
+}
+
+#primary-nav {
+  margin: 0 20px;
+  padding: 5px 0;
+  width: 920px;
+}
+
+#content-wrapper {
+  margin: 0 20px;
+  padding: 20px 0;
+  width: 920px;
+}
+
+#footer {
+  margin: 20px;
+  padding: 10px;
+  width: 900px;
+}
+
+#main.grid_12 {
+  margin: 0 0;
+  width: 900px;
+}
+
+#main {
+  margin-right: 34px;
+  /*width: 576px;*/
+  width: 650px;
+}
+
+/**
+ * Header
+ */
+#logo {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+#site-name {
+  margin: 10px 0;
+}
+
+#site-slogan {
+  font-size: 1.2em;
+}
+
+#primary-nav ul {
+  display: inline;
+}
+
+#primary-nav ul li {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-right: 20px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+#primary-nav ul li.menu-rss {
+  background: url('../images/rss.png') no-repeat;
+  padding-left: 20px;
+}
+
+#header,
+#primary-nav {
+  background: url('../images/border_h.png') repeat-x bottom;
+}
+
+/**
+ * Content
+ */
+.breadcrumb {
+  font-size: 0.714em;
+  margin-bottom: 10px;
+}
+
+.node {
+  clear: both;
+  overflow: auto;
+  padding: 20px 0;
+  text-align: justify;
+}
+
+.node h2 {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.sticky {
+  background-color: #f0f0f0;
+  border: 1px solid #d0d0e0;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.meta {
+  clear: both;
+  color: #888;
+  font-size: 0.786em;
+}
+
+.meta ul.links li {
+  padding: 0 0.5em 0 0;
+}
+
+.meta .terms ul.taxonomy ul.vocab-list,
+.meta .terms ul.taxonomy li.vocab-term {
+  background: transparent;
+  display: inline;
+  padding: 0 0 0 2px;
+}
+
+.meta .terms ul.taxonomy {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  font-size: 1.4em;
+  line-height: 1.4em;
+}
+
+.content {
+  margin: 20px 0;
+}
+
+#main h2,
+#comments h2 {
+  font-size: 1.429em;
+}
+
+.content blockquote {
+  background: #f8f8f8;
+  border: 1px dashed #ccc;
+  font-size: 0.9em;
+  margin: 10px 0;
+  padding: 5px 20px;
+}
+
+fieldset {
+  border: 1px dashed #ccc;
+}
+
+.content table {
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  font-size: 0.9em;
+}
+
+.content table tr td {
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 1px 0 0 1px;
+  padding: 5px 10px;
+}
+
+.content table tr th {
+  background: #f4f4f4;
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 1px 0 0 1px;
+  color: #666;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.content ol ol,
+.content ol ol ol,
+.content ul ul,
+.content ul ul ul,
+.content ol ul,
+.content ul ol {
+  margin: 0;
+}
+
+.content ol {
+  list-style-type: decimal;
+}
+
+.content ol ol {
+  list-style-type: lower-alpha;
+}
+
+.content ol ol ol {
+  list-style-type: lower-roman;
+}
+
+.content ul {
+  list-style-type: disc;
+}
+
+.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  margin: 2px 0 5px 10px;
+  padding: 0;
+}
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin: 2px 10px 5px 0;
+  padding: 0;
+}
+
+.content-centered {
+  text-align: center;
+}
+
+.pager {
+  margin: 20px 0;
+}
+
+.pager a.active {
+  color: #26a;
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/**
+ * Comment
+ */
+.comment-wrapper .even,
+#comment-form .even {
+  background: #f6f6f6 url('../images/border_h.png') repeat-x bottom;
+}
+
+.comment-wrapper .odd {
+  background: #fafafa url('../images/border_h.png') repeat-x bottom;
+}
+
+div.comment-wrapper {
+  background: transparent url('../images/border_h.png') repeat-x top;
+  margin: 20px 0;
+  padding-top: 1px;
+}
+
+.comment-wrapper .author-comment {
+  background-color: #ddf;
+}
+
+#main .box .content #comment-form .preview .comment-preview,
+#comments .comment,
+#main div.comment {
+  padding: 20px;
+}
+
+.comment-wrapper .comment {
+  padding: 20px;
+}
+
+#comment-form .even,
+.box .node {
+  margin-top: 20px;
+}
+
+.comment-author cite {
+  font-style: normal;
+  font-weight: bold;
+}
+
+.comment-meta,
+.comment-links {
+  font-size: 0.8em;
+}
+
+.comment-links {
+  float: right;
+}
+
+.comment-links .comment_forbidden {
+  display: none
+}
+
+.meta .links ul li.comment_forbidden {
+  padding: 0;
+}
+
+.preview .comment {
+  background-color: #ffffea;
+}
+
+.avatar {
+  background: #fff;
+  border: 1px solid #eee;
+  float: right;
+  margin: 0;
+  padding: 2px;
+}
+
+.avatar-48 {
+  height: 48px;
+  width: 48px;
+}
+
+.picture {
+  font-size: 0.5em;
+  line-height: 0.5em;
+}
+
+/**
+ * Search form
+ */
+#search-theme-form {
+  background: #fff;
+  border: 1px solid #ddd;
+  height: 33px;
+  margin: 10px 0 15px 0;
+  padding: 0;
+  width: 285px;
+  z-index: 999999;
+}
+
+#search-box {
+  float: right;
+}
+
+#search-theme-form p {
+  margin: 0;
+  padding: 0;
+}
+
+#search-theme-form input {
+  background: transparent;
+  border: none;
+  color: #0e5792;
+  float: left;
+  margin: 0;
+  padding: 5px;
+}
+
+#search-theme-form .search-box {
+  display: inline;
+  margin: 4px 0 0 5px;
+  width: 235px;
+}
+
+#search-theme-form .search-button {
+  height: 25px;
+  width: 25px;
+}
+
+#search-theme-form label,
+#search-block-form label {
+  display: none;
+}
+
+/**
+ * Sidebar
+ */
+#sidebar .content {
+  /*font-size: 1em;*/
+  margin-top: 0;
+}
+
+#sidebar {
+  font: 1.2em 'Lucida Grande', Arial, Sans-Serif;
+  padding: 20px 0;
+}
+
+#sidebar h2 {
+  background: url('../images/border_h.png') repeat-x bottom;
+  font-family: 'Lucida Grande', Sans-Serif;
+  font-size: 1.2em;
+}
+
+#sidebar ul,
+#sidebar ul ol {
+  margin: 0;
+  padding: 0;
+}
+
+#sidebar ul li {
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+#sidebar .block {
+  margin-bottom: 20px;
+}
+
+#sidebar ul p,
+#sidebar ul select {
+  margin: 5px 0 8px;
+}
+
+#sidebar ul ul,
+#sidebar ul ol {
+  margin: 0 0 0 20px;
+}
+
+#sidebar ul ul ul,
+#sidebar ul ol {
+  margin: 0 0 0 20px;
+}
+
+#sidebar ul ol li {
+  list-style: decimal outside;
+}
+
+#sidebar ul ul li,
+#sidebar ul ol li {
+  margin: 0px 0 0;
+  padding: 0;
+}
+
+#sidebar .item-list ul li {
+  list-style-position: outside;
+}
+
+/**
+ * Footer
+ */
+#footer {
+  background: url('../images/border_h.png') repeat-x top;
+  color: #888;
+  font-size: 1.1em;
+  line-height: normal;
+  text-align: center;
+}
+
+#content-top,
+#content-bottom,
+#node-top,
+#node-bottom,
+#footer-top {
+  text-align: center;
+}
+
+/**
+ * Miscellaneous
+ */
+.clear-block {
+  overflow: hidden;
+}
+
+.new {
+  color: #f33;
+}
+
+.search-info {
+  color: #888;
+}
+
+.item-list ul li {
+  list-style-position: inside;
+  margin: 0;
+  padding: 0 0 0 0.5em;
+}
+
+.item-list ul {
+  margin: 0.75em 0;
+}
+
+.read-more {
+  margin-bottom: 2em;
+}
+
+.previous-next-links {
+  margin: 2em 0 0 0;
+}
+
+.previous-next-links strong {
+  color: #26a;
+}
+
+.previous-link {
+  float: left;
+}
+
+.next-link {
+  float: right;
+}
+
+/**
+ * Grid background
+ *
+ * Uncomment the #wrapper selector below to see how
+ * this theme utilizes the 960 Grid System.
+ */
+
+/*
+#wrapper {
+  background: #070707 url(../images/12_col.gif) repeat-y 0 0;
+}
+*/

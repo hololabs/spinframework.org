@@ -1,0 +1,124 @@
+/* $Id: admin.css,v 1.2 2009/03/07 13:24:35 kong Exp $ */
+
+/**
+ * @file
+ * Contains CSS for Drupal administration area.
+ *
+ * You should not modify this file. Put your custom css
+ * or css overrides in custom.css so your changes will
+ * not be overwritten when upgrading to a new version
+ * of this theme.
+ */
+
+div.admin-panel,
+div.admin-panel .description,
+div.admin-panel .body,
+div.admin,
+div.admin .left,
+div.admin .right,
+div.admin .expert-link,
+div.item-list,
+.menu {
+  margin: 0;
+  padding: 0;
+}
+
+div.admin .left {
+  float: left;
+  width: 48%;
+}
+
+div.admin .right {
+  float: right;
+  width: 48%;
+}
+
+div.admin-panel {
+  padding: 1em 1em 1.5em;
+}
+
+.description {
+  margin-bottom: 1em;
+}
+
+div.admin-panel dl {
+  margin: 0;
+}
+
+div.admin-panel dd {
+  color: #888;
+  font-size: 0.92em;
+  line-height: 1.3em;
+  margin-bottom: .65em;
+  margin-top: -.2em;
+}
+
+ul.menu {
+  margin-left: 1.5em;
+}
+
+.help-items ul li {
+  list-style-type: disc;
+}
+
+.description {
+  color: #888;
+}
+
+a.tabledrag-handle:hover {
+  background: none;
+}
+
+#main fieldset, table, .node-type-list {
+  margin: 20px 0;
+}
+
+.tabs {
+  padding: 0;
+}
+
+.admin .admin-list,
+.admin .authored,
+.node-form .admin,
+form table,
+.version,
+.admin-panel ul.menu,
+#sidebar ul.menu {
+  font-size: 1em;
+}
+
+.admin-list {
+  margin-top: 20px;
+}
+
+.compact-link,
+.theme-info .description {
+  font-size: .85em;
+}
+
+.messages, .help {
+  margin: 20px 0;
+}
+
+div.status, tr.status {
+  background: #ddf none repeat scroll 0 0;
+  color: #002;
+  padding: 2px;
+}
+
+div.status {
+  border:1px solid #2090f0;
+}
+
+#admin-menu a:hover {
+  background: none;
+}
+
+#main .messages ul {
+  margin: 0;
+  padding: 0;
+}
+
+#system-themes-form table td {
+  vertical-align: middle;
+}
